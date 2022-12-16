@@ -16,3 +16,7 @@ Thus, we use the following methodology:
 2. **Formulate the mathematical model.** As we aim to develop an online algorithm, we formulate the optimization model to know the optimal solution in presence of complete information, and to assess our algorithm's performance thereafter.
 3. **Formulate an easy-to-implement algorithm.** We formulate the problem as a rule that classifies the cab drivers and find the most suitable dispatch to the incoming trip to be satisfied. In here, the computational complexity should be revised to show that the problem is NP-complete and therefore no algorithm is able to solve the problem in polynomial time. Thus, we may be able to approximate the solution.
 4. **Implementation and results analysis.** We implement the optimization model in C++ and solve it using CPLEX, and the developed online algorithm is implemented in Python for its compatibility with infrastructure often available at organizations. Then, we analyze different instances of the problem looking for patterns and to validate the performance of the algorithm.
+
+Furthermore, we have developed several other thumb-rules that allow us to compare our specialized rule. This comparison reveals the following results
+
+![Results](/Results.png)
