@@ -1,0 +1,15 @@
+######-- Para compilar el archivo --######
+
+g++ main.cpp io.cpp -o ejecutable.o -I /home/apps/cplex/12.6.1/cplex/include/ -I /home/apps/cplex/12.6.1/cplex/include/ilcplex/ -I /home/apps/cplex/12.6.1/concert/include/ -DIL_STD -L /home/apps/cplex/12.6.1/cplex/lib/x86-64_linux/static_pic/ -L /home/apps/cplex/12.6.1/concert/lib/x86-64_linux/static_pic/ -lilocplex -lconcert -lcplex -lm -lpthread
+
+######-- Para correr de forma "manual" --######
+
+./ejecutable.o servicios.txt disponibilidades.txt vehiculos.txt bases.txt tipos.txt anterior.txt
+
+######-- Para utilizar el script --######
+
+sbatch --export=NONE script.sh
+
+######-- Para darle permisos de administrador al script --######
+
+chmod 755 script.sh
